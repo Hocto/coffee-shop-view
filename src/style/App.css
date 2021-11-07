@@ -1,0 +1,31 @@
+.app{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar {
+    min-width: 220px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 30px;
+    align-items: left;
+    height: 100vh;
+  }
+
+
+@media (max-width: 768px) {
+    .app {
+      flex-direction: column;
+    }
+  
+    .search-bar {
+      flex: 0 0 30px;
+      max-width: 100vh;
+      align-items: center;
+      border-left: none;
+      border-bottom: 0.1em solid black;
+      padding: 30px 0px 0px 0px;
+    }
+  
+  }
